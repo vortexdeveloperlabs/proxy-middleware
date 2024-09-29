@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"moduleResolution": "NodeNext",
+		"module": "NodeNext",
+		"baseUrl": "./",
+		"lib": ["ESNext", "WebWorker", "WebWorker.ImportScripts"],
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"paths": {
+			"$types/*": ["./types/*"]
+		},
+		"types": [
+			"./types/fetchInterceptorMiddleware.d.ts",
+			"./types/proxyMiddlewareTransport.d.ts",
+			"./types/aeroSandboxMiddlewareRewriters.d.ts",
+			"./types/liveMiddleware.d.ts",
+			"@types/serviceworker",
+			"@mercuryworkshop/bare-mux"
+		]
+	},
+	"include": ["src/sw/**/*.ts"]
+}

@@ -1,0 +1,39 @@
+{
+	"name": "proxy-middleware",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/fetchInterceptorMiddleware.js",
+	"type": "module",
+	"exports": {
+		"./transport": "./dist/proxyMiddlewareTransport.js",
+		"./sandbox": "./dist/proxyMiddlewareSandbox.js"
+	},
+	"files": [
+		"dist/fetchInterceptorMiddleware.js",
+		"dist/proxyMiddlewareTransport"
+	],
+	"scripts": {
+		"format": "biome format --write .",
+		"lint": "biome lint --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vortexdeveloperlabs/proxy-middleware.git"
+	},
+	"keywords": ["proxy", "unblocker", "middleware"],
+	"author": "Ryan Wilson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/vortexdeveloperlabs/proxy-middleware/issues"
+	},
+	"homepage": "https://github.com/vortexdeveloperlabs/proxy-middleware#readme",
+	"dependencies": {
+		"@mercuryworkshop/bare-mux": "^2.0.9",
+		"@types/serviceworker": "^0.0.96",
+		"libarchive.js": "^2.0.2",
+		"local-db-storage": "^2.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.2"
+	}
+}

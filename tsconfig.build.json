@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"moduleResolution": "NodeNext",
+		"module": "NodeNext",
+		"baseUrl": "./",
+		"lib": ["ESNext"],
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"paths": {
+			"$types/*": ["./types/*"]
+		},
+		"types": [
+			"@types/node"
+		]
+	},
+	"include": [
+		"./rpsack.config.ts",
+	],
+}
